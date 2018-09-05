@@ -21,7 +21,7 @@ public class BinarySearch {
 
             steps++;
             if (theArray[middleIndex] == searchItem) {
-                System.out.println("Number of steps >> " + steps);
+                System.out.println("Binary Search loops >> " + steps);
                 return theArray[middleIndex];
             } else if (theArray[middleIndex] > searchItem) {
                 max = middleIndex - 1;
