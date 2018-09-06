@@ -14,7 +14,7 @@ public class Main {
 
 
         //int values[] = {13, 21, 54, 81, 76, 7,  90, 45};
-        int values[] = {8, 13, 8,7, 5, 5, 6, 6, 7, 8, 81};
+        int values[] = {5, 5, 6, 6, 7, 8, 21, 12, 81};
         int[] array = new int[100000];
 
         Random random = new Random();
@@ -29,6 +29,10 @@ public class Main {
         int target = 81;
         System.out.println("Binary Search > " + binarySearch.binarySearch(values, n, target));
         System.out.println("Linear Search > " + linearSearch.linearSearch(values, n, target));
+
+        System.out.println("\n----------- SORTING ALGORITHMS -------------------- ");
+        System.out.println("Bubble Sort" + new BubbleSort().bubbleSort(values, n));
+
 
 
     }
